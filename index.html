@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Face Detection</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+
+
+</head>
+
+<body>
+    <!-- HTML STARTS HERE -->
+
+    <!-- Type your codes here -->
+    <div class="container-sm|md|lg|xl p-3 m-3">
+        <img id="title" src="./image/title_face.png">
+    </div>
+
+    <div class="container-sm|md|lg|xl px-3 mx-3">
+
+        <div class="row">
+            <h5 id="p1"> Click Start to start Video </h5>
+        </div>
+
+        <div class="row">
+            <img id="left" src="./image/empty.png">
+        </div>
+
+        <div class="row my-3">
+            <button onclick="eel.video_feed()" id="btn1" type="button" class="btn mr-3 btn-primary">Start Video</button>
+            <button onclick="eel.stop_video_feed()" id="btn2" type="button" class="btn mr-3 btn-warning">Stop</button>
+            <button onclick="eel.restart_video_feed()" id="btn3" type="button" class="btn mr-3 btn-info">Restart</button>
+            <button onclick="eel.save_video_feed()" id="btn4" type="button" class="btn mr-3 btn-dark">Save</button>
+        </div>
+
+    </div>
+
+    <!-- HTML ENDS HERE -->
+
+</body>
+
+</html>
